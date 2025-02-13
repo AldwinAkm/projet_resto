@@ -1,0 +1,37 @@
+nav ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #e5e5e5;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+/*Underline effect*/
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: deepskyblue;
+    transition: width 0.3s ease;
+}
+/*Underline effect*/
+nav ul li a:hover::after {
+    width: 70%;
+}
+/*Underline effect*/
+nav ul li a:hover {
+    color: deepskyblue;
+}
+nav ul li{
+    list-style: none;
+}
