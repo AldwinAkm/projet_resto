@@ -35,3 +35,8 @@ nav ul li a:hover {
 nav ul li{
     list-style: none;
 }
+
+.img-hover:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
